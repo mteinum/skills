@@ -8,6 +8,7 @@ Maintained by [Morten Teinum](https://github.com/mteinum).
 
 | Skill | Purpose |
 | --- | --- |
+| [Apple Human Interface Guidelines](apple-human-interface-guidelines/SKILL.md) | Design, implement, and review Apple-platform interfaces using current HIG guidance, platform conventions, and accessibility checks. |
 | [Develop iPhone Duo Apps](develop-iphone-duo-apps/SKILL.md) | Build or adapt SwiftUI and UIKit apps for dual displays, fold-aware layouts, vertical bars, camera transitions, and Duo testing. |
 
 ## Install
