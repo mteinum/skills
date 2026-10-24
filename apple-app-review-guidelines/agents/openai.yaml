@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple App Review Guidelines"
+  short_description: "Check App Store readiness and resolve review issues"
+  default_prompt: "Use $apple-app-review-guidelines to assess this app or rejection against Apple's current App Review Guidelines, identify evidence-backed issues, and prepare fixes or review notes."
