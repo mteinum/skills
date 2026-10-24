@@ -1,0 +1,4 @@
+interface:
+  display_name: "Develop iPhone Duo Apps"
+  short_description: "Build adaptive SwiftUI and UIKit apps for iPhone Duo"
+  default_prompt: "Use $develop-iphone-duo-apps to develop or adapt this app for iPhone Duo while preserving its existing deployment targets."
