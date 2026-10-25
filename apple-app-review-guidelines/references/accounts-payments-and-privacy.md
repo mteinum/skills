@@ -30,6 +30,14 @@ Local StoreKit configuration tests alone do not establish that App Store Connect
 
 For subscriptions, inspect the actual offer, price, duration, trial conversion, delivered benefit, and management path against Apple's [subscription guidance](https://developer.apple.com/app-store/subscriptions/). Compare the paywall with the product returned in the test environment instead of trusting a mockup.
 
+## Compare paid-feature claims with delivered behavior
+
+Compare store descriptions, screenshots, ads, and paywall claims with the shipped experience under [guideline 2.3](https://developer.apple.com/app-store/review/guidelines/#accurate-metadata) and [guideline 5.6](https://developer.apple.com/app-store/review/guidelines/#developer-code-of-conduct). Verify advertised benefits, usage limits, subscription conditions, and restrictions before recommending copy.
+
+For AI features, inspect supported devices, languages, service availability, generation limits, failure behavior, and the basis for quality or accuracy claims. Clearly communicate material limitations; do not present selected demonstration output as a guaranteed result. Assess content safeguards against the applicable content and UGC rules rather than assuming every AI app requires the same moderation system.
+
+Where available and relevant, use complaints and refund reasons to identify mismatches between promises and delivery. Guideline 5.6.4 identifies excessive complaints and refund requests as possible app-quality signals. Do not invent numerical thresholds or claim that such signals automatically trigger an audit or termination.
+
 ## Trace data before checking declarations
 
 Create a small inventory from the app and its dependencies:

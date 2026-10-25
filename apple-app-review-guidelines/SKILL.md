@@ -1,6 +1,6 @@
 ---
 name: apple-app-review-guidelines
-description: Assess App Store submission readiness, interpret App Review rejections, implement review-related fixes, and draft review notes or appeals using Apple's current App Review Guidelines. Use for numbered guideline issues, payments, accounts, privacy, content moderation, and submission evidence. Excludes purely visual HIG reviews and does not guarantee approval.
+description: Assess App Store submission readiness, interpret App Review rejections, implement review-related fixes, and draft review notes or appeals using Apple's current App Review Guidelines. Use for numbered guideline issues, payments, accounts, privacy, content moderation, remote configuration, developer-account termination notices, and submission evidence. Excludes purely visual HIG reviews and does not guarantee approval.
 ---
 
 # Apple App Review Guidelines
@@ -25,9 +25,9 @@ If live sources are unavailable, clearly identify conclusions as provisional and
 
 ## Load only the relevant references
 
-- [Policy and evidence](references/policy-and-evidence.md): route a general review, locate applicable clauses, and connect findings to evidence.
-- [Accounts, payments, and privacy](references/accounts-payments-and-privacy.md): investigate login, deletion, purchase paths, storefront exceptions, data disclosures, tracking, and SDKs.
-- [Submissions and rejections](references/submissions-and-rejections.md): prepare reviewer access, validate the submission, investigate a rejection, and draft a reply or appeal.
+- [Policy and evidence](references/policy-and-evidence.md): route a general review, locate applicable clauses, and connect findings to evidence, including review integrity and remote configuration.
+- [Accounts, payments, and privacy](references/accounts-payments-and-privacy.md): investigate login, deletion, purchase paths, storefront exceptions, data disclosures, tracking, SDKs, and marketing claims about paid or AI features.
+- [Submissions and rejections](references/submissions-and-rejections.md): prepare reviewer access, validate the submission, investigate a rejection, and draft a reply or appeal, and distinguish app rejection from account termination.
 
 For interface conventions, use the Apple Human Interface Guidelines skill when available. A HIG assessment does not establish App Review acceptance. Identify alternative-distribution or notarization tasks explicitly and consult the applicable Apple process instead of treating it as a full App Store review.
 

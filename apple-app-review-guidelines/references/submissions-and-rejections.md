@@ -12,6 +12,8 @@ Do not fabricate accounts, hardware tests, licenses, or permission from a regula
 
 Use [purchase configuration guidance](https://developer.apple.com/help/app-review/before-submitting-for-review/configure-in-app-purchases) when review depends on paid features. Identify the actual account, product, or agreement dependency rather than asking the reviewer to work around a broken flow.
 
+For subscriptions and other conditional features, document the required role, product, region, device capability, or flag state and the steps that make each relevant path reviewable. Check those steps against the submitted build and available backend. Explain legitimate environment differences; never create a sanitized reviewer-only experience that conceals production behavior.
+
 ## Investigate a rejection
 
 1. Preserve the original message, guideline numbers, attachments, build/version, device/OS, and reported steps.
@@ -31,6 +33,12 @@ An appeal addresses an unresolved disagreement with a rejection or removal after
 
 Do not argue solely from competitors' approvals or business urgency. Link the applicable rule to the app's actual behavior. If the issue is confirmed, focus on the correction; if it is disputed, explain the interpretation and supporting evidence without claiming an assured outcome.
 
+## Handle a developer-account termination notice
+
+Treat a pending or completed account termination as a separate scope from an individual app rejection. Preserve the exact notice, cited agreement provisions, affected account/apps, response channel, and stated deadline. Verify the applicable process with Apple; do not assume the App Review Board route or a universal 30-day deadline applies.
+
+Build a factual timeline from the submitted binary, configuration history, reviewer access, and production behavior. Acknowledge confirmed issues and document concrete remediation and verification; explain disputed claims with evidence. Do not invent admissions, promise reinstatement, or recommend another account to evade enforcement. Under [guideline 5.6](https://developer.apple.com/app-store/review/guidelines/#developer-code-of-conduct), Apple describes possible restoration after approving an improvement plan and confirming changes; this is not a guaranteed outcome. Keep account-level communications and evidence private.
+
 ## Draft useful review notes
 
 Adapt this structure to the specific submission, omitting irrelevant fields:
@@ -42,6 +50,7 @@ Changes relevant to this review:
 Steps to reach and exercise the affected feature:
 Account roles and private credential location:
 Purchase, hardware, regional, or service dependencies:
+Conditional features and steps to access them:
 Supporting evidence and any known testing limitations:
 ```
 
