@@ -9,6 +9,7 @@ Maintained by [Morten Teinum](https://github.com/mteinum).
 | Skill | Purpose |
 | --- | --- |
 | [Apple App Review Guidelines](apple-app-review-guidelines/SKILL.md) | Assess submission readiness, resolve review rejections, and prepare fixes or responses using current Apple policy and app evidence. |
+| [Apple App Store Assets](apple-app-store-assets/SKILL.md) | Create and review screenshots, previews, icons, headers, search artwork, and event media using current Apple guidance and export specifications. |
 | [Apple Human Interface Guidelines](apple-human-interface-guidelines/SKILL.md) | Design, implement, and review Apple-platform interfaces using current HIG guidance, platform conventions, and accessibility checks. |
 | [Develop iPhone Duo Apps](develop-iphone-duo-apps/SKILL.md) | Build or adapt SwiftUI and UIKit apps for dual displays, fold-aware layouts, vertical bars, camera transitions, and Duo testing. |
 
@@ -20,6 +21,12 @@ Choose a skill and paste its installation prompt into Codex to use the built-in 
 
 ```text
 $skill-installer install https://github.com/mteinum/skills/tree/main/apple-app-review-guidelines
+```
+
+**Apple App Store Assets**
+
+```text
+$skill-installer install https://github.com/mteinum/skills/tree/main/apple-app-store-assets
 ```
 
 **Apple Human Interface Guidelines**
@@ -44,6 +51,12 @@ Mention an installed skill in your prompt and describe the task. For example:
 
 ```text
 $apple-app-review-guidelines Review this app for App Store submission readiness and identify issues with evidence and suggested fixes.
+```
+
+**Apple App Store Assets**
+
+```text
+$apple-app-store-assets Review these App Store screenshots and prepare an improved sequence with localized copy and validated export sizes.
 ```
 
 **Apple Human Interface Guidelines**

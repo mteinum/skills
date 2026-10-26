@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple App Store Assets"
+  short_description: "Create and review assets using Apple guidance"
+  default_prompt: "Use $apple-app-store-assets to review these App Store assets and prepare concrete improvements using current Apple guidance."
