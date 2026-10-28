@@ -33,11 +33,21 @@ Establish hierarchy with area, placement, typography, and color together. Use ac
 
 ## Construct and adapt the palette
 
-Use monochromatic, analogous, or complementary relationships as candidate directions. If specifying hue angles, name the color model; named-color examples and different color wheels are not interchangeable.
+Start new directions from something concrete—a material, place, printed artifact, or the brand's existing assets—rather than an abstract mood word. Then choose and state a **color budget**: how much of the screen carries chroma, which surfaces are neutral or tinted, and where the accent appears. Options include a neutral foundation with a sparse accent, a tinted or immersive canvas, color-blocked surfaces, or a dark atmospheric field. None is the default; pick the one that fits the product and commit to it.
 
-Separate hue, chroma, and lightness decisions. Oklab/OKLCH can help construct perceptually smoother ramps, but their lightness coordinates do not replace measured contrast. Inspect gamut mapping and the actual output colors on supported targets.
+Decide neutral temperature and accent hue separately, even when you then tint neutrals toward the accent on purpose. Use contrast in chroma and lightness, not only hue, to create focal points.
 
-Develop light and dark role mappings deliberately. Review surfaces, foregrounds, elevation, assets, and interactions in each appearance instead of assuming numerical inversion preserves hierarchy. Retain user appearance preferences and platform adaptations. Do not assert that either appearance is universally healthier or more readable.
+Avoid these common failure patterns unless the direction deliberately calls for them:
+
+- **Hue-soup:** canvas, surfaces, text, borders, and accent all drawn from one hue at similar chroma, so nothing stands out.
+- **Uniform mid-chroma:** every color dusty and medium-saturated; no quiet areas and no punch.
+- **Muddied accents:** darkening or desaturating an accent only so white text passes. Consider a dark foreground on the bright fill instead, or keep the vivid value for non-text use.
+- **Heavy decorative borders:** strong borders on every container. Reserve 3:1 boundaries for controls that need them; separate layout with space, tonal steps, or subtle hairlines.
+- **Re-skinned clones:** when producing several concepts, differing only in hue. Vary the color budget, surface polarity, and number of hue families as well.
+
+Use monochromatic, analogous, or complementary relationships as candidate directions. If specifying hue angles, name the color model; named-color examples and different color wheels are not interchangeable. Separate hue, chroma, and lightness decisions. Oklab/OKLCH can help construct perceptually smoother ramps, but their lightness coordinates do not replace measured contrast. Inspect gamut mapping and the actual output colors on supported targets.
+
+Develop light and dark role mappings deliberately. Review surfaces, foregrounds, elevation, assets, and interactions in each appearance instead of assuming numerical inversion preserves hierarchy. Dark themes often need accents with higher lightness and adjusted chroma rather than the light-theme values. Retain user appearance preferences and platform adaptations. Do not assert that either appearance is universally healthier or more readable.
 
 Use the chart guidance in [Implementation](references/implementation.md#charts-and-data) when color encodes data; an attractive brand palette alone is insufficient.
 
@@ -46,6 +56,10 @@ Use the chart guidance in [Implementation](references/implementation.md#charts-a
 Read [Accessibility and validation](references/accessibility-and-validation.md) for thresholds, exceptions, and measurement. Evaluate actual foreground/background pairs and relevant states, including composition over images or translucent surfaces. A single color cannot be certified accessible in isolation.
 
 Check non-color cues for meaning and interaction, keyboard focus, and the affected appearance/accessibility settings. Inspect real text and chart marks at their intended sizes. Automated contrast results, grayscale previews, and color-vision simulations each reveal different problems; none establishes complete accessibility.
+
+Critique the visual result too. Render and screenshot it, then compare it against the stated direction and color budget: Is the focal point where intended? Do quiet areas stay quiet? Does it avoid the failure patterns above? For multiple concepts, view them side by side and revise any that read as the same design in a different hue. Passing contrast checks says nothing about whether the design works.
+
+Color is only part of what makes an interface feel designed. Typography, copywriting, imagery, and layout often matter more. When a request is about overall look and feel, say what a color change alone cannot fix, and do not hide weak structure with color.
 
 ## Deliver a usable result
 

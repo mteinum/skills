@@ -12,7 +12,7 @@ Separate primitive values from semantic roles and, when useful, component bindin
 | Content | `text.primary`, `text.secondary`, `icon.default` | Allowed surfaces; secondary text remains readable |
 | Actions | `action.primary`, `onAction.primary`, `link.default` | Normal, hover where relevant, pressed, focus, disabled |
 | Feedback | `status.error`, `status.warning`, `status.success`, `status.info` | Foreground, container, and visible label/symbol |
-| Structure | `border.subtle`, `border.control`, `focus.ring` | Decorative separation versus essential identification |
+| Structure | `border.subtle`, `border.control`, `focus.ring` | Subtle hairlines for layout separation (`border.subtle`) vs. 3:1 boundaries for interactive controls (`border.control`) |
 | Selection | `selection.container`, `selection.content` | Persistent indication distinct from transient hover |
 | Data | `data.category.*`, `data.sequential.*`, `data.diverging.*` | Data meaning and stable mapping across views |
 
@@ -24,7 +24,16 @@ For each relevant component, record the foreground/background combination for no
 
 Choose the desired character from the product context, then evaluate it on representative screens. Hue can distinguish families; lightness establishes much of the readable separation; chroma changes intensity. These controls interact, and neighboring colors affect their appearance.
 
-A ramp should have useful values for actual roles rather than merely equally spaced numbers. Test very light accents with dark foregrounds as candidates, rather than assuming white button text. [Radix](https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale) illustrates purposeful steps and foreground exceptions.
+Color-budget examples (illustrative, not rules):
+
+| Direction | Surfaces | Accent use |
+| --- | --- | --- |
+| Restrained editorial | Near-neutral paper and ink | One signal hue, used sparingly |
+| Product workspace | Neutral canvas with tonal panel steps | Actions, selection, and data only |
+| Atmospheric | Deep or tinted canvas | Contrasting-temperature focal accent |
+| Color-blocked | Large high-chroma fields | Ink plus a counterpoint hue |
+
+A ramp should have useful values for actual roles rather than merely equally spaced numbers. Test very light or vivid accents with dark foregrounds as candidates, rather than assuming white button text or desaturating the accent. [Radix](https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale) illustrates purposeful steps and foreground exceptions.
 
 When using harmony geometry, select a declared hue model: a triad uses three hue positions separated by 120 degrees within that model; a split complement uses the two neighbors of the opposite hue. Those relations suggest compositions, not measured contrast. Adjust lightness/chroma and color area to fit the interface rather than preserving geometry at the cost of legibility.
 
