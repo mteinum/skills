@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Color Design"
+  short_description: "Design and validate color systems for apps and websites"
+  default_prompt: "Use $ui-color-design to design or review this interface’s color roles, themes, interaction states, and accessibility."

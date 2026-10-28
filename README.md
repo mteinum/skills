@@ -12,6 +12,7 @@ Maintained by [Morten Teinum](https://github.com/mteinum).
 | [Apple App Store Assets](apple-app-store-assets/SKILL.md) | Create and review screenshots, previews, icons, headers, search artwork, and event media using current Apple guidance and export specifications. |
 | [Apple Human Interface Guidelines](apple-human-interface-guidelines/SKILL.md) | Design, implement, and review Apple-platform interfaces using current HIG guidance, platform conventions, and accessibility checks. |
 | [Develop iPhone Duo Apps](develop-iphone-duo-apps/SKILL.md) | Build or adapt SwiftUI and UIKit apps for dual displays, fold-aware layouts, vertical bars, camera transitions, and Duo testing. |
+| [UI Color Design](ui-color-design/SKILL.md) | Design, implement, and review palettes, color roles, themes, interaction states, contrast, and chart colors using standards and research. |
 
 ## Install
 
@@ -39,6 +40,12 @@ $skill-installer install https://github.com/mteinum/skills/tree/main/apple-human
 
 ```text
 $skill-installer install https://github.com/mteinum/skills/tree/main/develop-iphone-duo-apps
+```
+
+**UI Color Design**
+
+```text
+$skill-installer install https://github.com/mteinum/skills/tree/main/ui-color-design
 ```
 
 Codex detects newly installed skills automatically. If a skill does not appear, restart Codex.
@@ -69,6 +76,12 @@ $apple-human-interface-guidelines Review this SwiftUI screen for navigation, acc
 
 ```text
 $develop-iphone-duo-apps Adapt this iOS app for iPhone Duo while preserving its existing deployment targets.
+```
+
+**UI Color Design**
+
+```text
+$ui-color-design Review this app's colors and improve the semantic roles, light and dark themes, interaction states, and contrast while preserving its brand.
 ```
 
 Codex can also select a skill automatically when a request matches its description.
